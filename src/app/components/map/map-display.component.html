@@ -1,0 +1,14 @@
+<header>
+  <div class="title">click on the map to see the coordinates</div>
+</header>
+<main>
+  <div id="ol-map" class="map-container"
+      (click)="showCoordinates($event)">
+  </div>
+</main>
+<footer>
+  <div *ngIf="data">
+    {{data|json}}
+ </div>
+</footer>
+
